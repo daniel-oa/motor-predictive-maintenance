@@ -164,3 +164,43 @@ The original generated dataset is not included in this repository. However, the 
 The `complete model.ipynb` notebook contains the subsequent data preparation, feature engineering, model comparison, hyperparameter tuning, final model training, and evaluation steps.
 
 The trained `.pkl` models are generated as outputs of the notebook rather than being treated as source files.
+
+## How to Run
+
+### 1. Generate the Dataset
+
+The dataset used for model development is generated from the MATLAB/Simulink motor simulation.
+
+1. Open `matlab/motor_model.slx` in MATLAB/Simulink.
+2. Run `matlab/datagenerationcode.m` to generate the simulated motor data.
+3. Run `matlab/healthindexcode.m` to process the generated data and produce `motor_data_complete.csv`.
+
+The generated dataset is not included in this repository.
+
+### 2. Train and Evaluate the Models
+
+Open:
+
+`notebooks/complete model.ipynb`
+
+Install the Python dependencies listed in `requirements.txt`, then run the notebook.
+
+When prompted, provide the path to the generated `motor_data_complete.csv` file.
+
+The notebook performs data preparation, feature engineering, model comparison, hyperparameter tuning, final model training, and evaluation.
+
+The trained model files are generated as `.pkl` files by the notebook and are not included in the repository.
+
+### 3. Run the Edge Application
+
+The Raspberry Pi application is located in:
+
+`code/motor_pdm.py`
+
+The application loads the trained models and uses the connected sensors to perform local inference.
+
+The runtime baseline logic is contained in:
+
+`code/runtime_baseline.py`
+
+The edge application is intended to run on the Raspberry Pi hardware described in the Hardware section.
