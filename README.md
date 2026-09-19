@@ -4,6 +4,10 @@ A portable, low-cost edge predictive maintenance system for monitoring electric 
 
 The system uses machine learning to detect motor health state, identify fault types, and estimate a continuous Health Index.
 
+## Prototype
+
+![Motor predictive maintenance prototype](images/prototype.jpg)
+
 ## System Overview
 
 The system is designed as a portable edge device that can be temporarily attached to different electric motors in a production environment.
