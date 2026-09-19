@@ -1,0 +1,11 @@
+numpy
+pandas
+matplotlib
+seaborn
+scipy
+scikit-learn
+joblib
+smbus2
+luma.oled
+Pillow
+RPi.GPIO
