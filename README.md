@@ -63,7 +63,15 @@ A Random Forest classifier determines whether the motor is operating in a:
 
 ### 2. Anomaly Classification
 
-When a motor is classified as Faulty, a second Random Forest classifier identifies the type of anomaly from seven fault classes.
+When a motor is classified as Faulty, a second Random Forest classifier identifies the type of anomaly from seven fault classes:
+
+- `CurrentAnomaly`
+- `VibrationAnomaly`
+- `TemperatureAnomaly`
+- `VibrationCurrentAnomaly`
+- `VibrationTemperatureAnomaly`
+- `CurrentTemperatureAnomaly`
+- `MultiParameterAnomaly`
 
 ### 3. Health Index Regression
 
