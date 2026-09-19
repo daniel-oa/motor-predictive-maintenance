@@ -187,7 +187,7 @@ Open:
 
 `notebooks/complete model.ipynb`
 
-Install the Python dependencies listed in `requirements.txt`, then run the notebook.
+Install the Python dependencies listed in requirements.txt, then run the notebook. The Raspberry Pi application requires the additional dependencies listed in requirements-pi.txt.
 
 When prompted, provide the path to the generated `motor_data_complete.csv` file.
 
