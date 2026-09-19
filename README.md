@@ -139,26 +139,34 @@ The system operates through the following sequence:
 
 ```text
 motor-predictive-maintenance/
-├── .gitignore
-├── README.md
-├── requirements.txt
-│
 ├── code/
 │   ├── motor_pdm.py
 │   └── runtime_baseline.py
-│
-├── notebooks/
-│   └── complete model.ipynb
-│
+├── hardware/
+│   └── Proteus circuit model.pdsprj
+├── images/
+│   └── prototype.jpg
 ├── matlab/
 │   ├── datagenerationcode.m
 │   ├── healthindexcode.m
 │   └── motor_model.slx
-│
-└── hardware/
-    └── Proteus circuit model
+├── notebooks/
+│   └── complete model.ipynb
+├── .gitignore
+├── README.md
+├── requirements.txt
+└── requirements-pi.txt
 ```
-
+- `code/` — Raspberry Pi application and runtime baseline logic.
+- `hardware/` — Proteus circuit design for the hardware prototype.
+- `images/` — Project visuals used in the README.
+- `matlab/` — MATLAB/Simulink files used for motor simulation, data generation, and Health Index development.
+- `notebooks/` — Data preparation, feature engineering, model training, tuning, and evaluation.
+- `requirements.txt` — Python dependencies for the machine learning notebook.
+- `requirements-pi.txt` — Additional dependencies required for the Raspberry Pi runtime.
+- `.gitignore` — Excludes generated model artifacts and caches.
+- `README.md` — Project documentation.
+  
 ## Dataset and Reproducibility
 
 The dataset used for model development was generated from the MATLAB/Simulink motor simulations described above.
